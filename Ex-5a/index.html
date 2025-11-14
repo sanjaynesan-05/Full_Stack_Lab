@@ -4,24 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
+    <title>Basic Calculator</title>
     <link rel="stylesheet" href="./styles.css">
     <script src="./script.js"></script>
 </head>
 
 <body>
-    <div>
-        <h2>Simple Calculator</h2>
-        <input type="number" name="" id="num1" placeholder="Enter first number">
-        <input type="number" name="" id="num2" placeholder="Enter second number">
-        <br>
-        <button onclick="add()">+ add</button>
-        <button onclick="subtract()">- Subract</button>
-        <button onclick="multiply()">* Multiply</button>
-        <button onclick="divide()">/ Divide</button>
-        <button onclick="Clear()" class="clear">Clear</button>
-        <br>
-        <div id="result"></div>
+    <div class="box">
+        <h2>Basic Calculator</h2>
+        <label>Enter Number 1:</label>
+        <input type="number" id="num1">
+
+        <label>Enter Number 2:</label>
+        <input type="number" id="num2">
+
+        <label>Select Operator:</label>
+        <select id="op">
+            <option value="+">Addition (+)</option>
+            <option value="-">Subtraction (-)</option>
+            <option value="*">Multiplication (*)</option>
+            <option value="/">Division (/)</option>
+        </select>
+
+        <button onclick="calculate()">Calculate</button>
+
+        <h3 id="result"></h3>
     </div>
 </body>
 

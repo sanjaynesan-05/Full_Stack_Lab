@@ -1,120 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Full Stack Lab</title>
-    <link rel="stylesheet" href="./styles.css">
+    <title>My Resume Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1 id="heading">MY  RESUME PAGE</h1>
-    <section class="Hero">
-        <div>
-            <h4><b>Aarav Sharma</b></h4>
-            <p>12/2, No.4 <br>Ashok Nager <br>
-                Chennai – 600015 <br>
-                Ph: 982723923 <br>
-                Email : aarav.sharma@example.com </p>
+
+    <div class="header-box">
+        <h1>MY RESUME PAGE</h1>
+    </div>
+
+    <section class="profile-card">
+        <img src="me.png" alt="My Image" class="profile-image">
+
+        <h2 class="name">Sanjay Nesan J</h2>
+        <p class="address">
+            12/2, No.4, Ashok Nagar<br>
+            Chennai – 600015<br>
+            Ph: 982723923
+        </p>
+
+        <div class="quick-links">
+            <a href="https://sanjay-nesan-j.web.app/" target="_blank">🌐 Visit My Website</a>
+            <a href="mailto:sanjaynesan007@gmail.com">📧 Email Me</a>
+            <a href="tel:9944064709">📞 Call Me</a>
         </div>
-        <div>
-            <img src="./Aarav Sharma.jpg" alt="Aarav Sharma">
-        </div>
+        
     </section>
 
-    <div class="links">
-        <a href="https://dharshankumar.com">Visit My website</a>
-        <a href="http://karunya.edu" target="_blank">My College</a>
-        <a href="mailto:maya.rodriguez@example.com">Email Me!</a>
-        <a href="">Call Me</a>
-    </div>
+    <section class="card">
+        <h3 id="career">Career Objective</h3>
+        <p>
+            I'm a creative technologist blending design aesthetics with full-stack precision. <br>
+            With 3+ years of experience, I build seamless digital products from concept to deployment. <br>
+            I specialize in React, Node.js, and design tools like Figma & Adobe Suite. <br>
+            I love exploring new tech, contributing to open source, and sharing knowledge. <br>
+            I believe the best digital work happens where logic meets imagination. <br>
+        </p>
+    </section>
 
-    <div>
-        <h2>Career Objective</h2>
-        <p>A Career Objective or a Resume Objective is essentially a heading statement that describes your
-            professional goals in two to three sentences. Employers looking to hire an employee for a position tend
-            to seek candidates that are driven enough to understand what they want.</p>
-    </div>
-
-    <div>
-        <h2>Academic Profile</h2>
+    <section class="card">
+        <h3 id="education">Academic Profile</h3>
         <table>
             <tr>
                 <th>Education</th>
                 <th>School / College</th>
                 <th>Board / University</th>
-                <th>Percentage of Marks</th>
-                <th>Year of Passing</th>
+                <th>Percentage</th>
+                <th>Year</th>
             </tr>
             <tr>
                 <td>B.Tech</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>Karunya</td>
+                <td>University</td>
+                <td>80%</td>
+                <td>2027</td>
             </tr>
             <tr>
                 <td>HSC</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>Suguna RIP</td>
+                <td>English Medium</td>
+                <td>85%</td>
+                <td>2023</td>
             </tr>
             <tr>
                 <td>SSLC</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>Lisieus</td>
+                <td>English Medium</td>
+                <td>85%</td>
+                <td>2021</td>
             </tr>
-
         </table>
-    </div>
+    </section>
 
-    <div>
-        <h2>Technical Skills</h2>
-        <ol>
+    <section class="card">
+        <h3 id="skills">Technical Skills</h3>
+        <ul class="styled-list">
             <li>Data Structures</li>
-            <li>Computer Networks</li>
             <li>Web Technology</li>
             <li>Python Programming</li>
-            <li>Java Programming </li>
-        </ol>
-    </div>
+            <li>Java Programming</li>
+        </ul>
+    </section>
 
-    <div>
-        <h2>Advanced Technology Skills</h2>
-        <ul>
+    <section class="card">
+        <h3 id="advanced">Advanced Technology Skills</h3>
+        <ul class="styled-list">
             <li>Data Science</li>
             <li>Data Analytics</li>
             <li>Machine Learning Principles</li>
         </ul>
-    </div>
+    </section>
 
-    <div>
-        <h2>Internship Completed</h2>
-        <h3>Infosys</h3>
-        <p>write about internship</p>
-        <br>
-        <h3>Microsoft</h3>
-        <p>write about internship</p>
-        <br>
-        <h3>CISCO</h3>
-        <p>write about internship</p>
-        <br>
-        <h3>Oracle</h3>
-        <p>write about internship</p>
-        <br>
-    </div>
+    <section class="card">
+        <h3>Internships Completed</h3>
 
-    <div>
-        <h2>PHOTO GALLERY</h2>
-        <img src="./coffe.webp" alt="Chocolate coffee">
-        <img src="./laptop-coffe.jpg" alt="Laptop with coffee">
-    </div>
+        <div class="internship">
+            <h4>Infomedia Services</h4>
+            <p>
+                - Hands-on training in data visualization & analytics<br>
+                - Built dashboards & team-based data projects<br>
+                - Appreciated for dedication & work quality<br>
+                - Real-world data problem solving
+            </p>
+        </div>
 
-    <div>
-        <a href="">objective</a> | <a href="">Technical Skills</a> | <a href="">Education</a> | <a href="">Advanced Techonology Skills</a> | <a href="">Internship</a> | <a href="">Careers</a>  
-    </div>
+        <div class="internship">
+            <h4>Nandha Infotech</h4>
+            <p>
+                - Worked on full-stack development (React + Node.js + MongoDB)<br>
+                - Debugging, testing, and feature deployment<br>
+                - Collaborated with senior developers in agile sprint cycles<br>
+                - Learned real full-stack workflow
+            </p>
+        </div>
+    </section>
+
+    <section class="card">
+        <h3>Photo Gallery</h3>
+        <div class="gallery">
+            <img src="airquality.webp" alt="Air Quality Project">
+            <img src="car_rental.webp" alt="Car Rental Project">
+            <img src="geofence.webp" alt="Geofence Project">
+            <img src="kebaluxe.webp" alt="Kebaluxe Project">
+        </div>
+    </section>
+
+    <footer class="navbar">
+        <a href="#career">Career Objective</a>
+        <a href="#skills">Technical Skills</a>
+        <a href="#education">Education</a>
+        <a href="#advanced">Advanced Tech Skills</a>
+    </footer>
+
 </body>
-
 </html>

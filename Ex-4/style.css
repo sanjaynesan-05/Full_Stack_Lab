@@ -107,6 +107,7 @@ body {
 /* Form Group */
 .form-group {
     margin-bottom: 20px;
+    position: relative;
 }
 
 .form-group label {
@@ -136,6 +137,25 @@ body {
 
 .form-group input::placeholder {
     color: #bbb;
+}
+
+/* Show/Hide Password Button */
+.form-group button[type="button"] {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 0;
+    margin-top: 8px;
+}
+
+.form-group button[type="button"]:hover {
+    text-decoration: underline;
 }
 
 /* Button Styling */

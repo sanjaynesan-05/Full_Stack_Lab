@@ -1,31 +1,14 @@
-function add(){
-    const n1= parseFloat(document.getElementById('num1').value);
-    const n2= parseFloat(document.getElementById('num2').value);
-    document.getElementById('result').innerHTML = "Result :" + (n1 + n2);
-}
+function calculate() {
+    let a = parseFloat(document.getElementById("num1").value);
+    let b = parseFloat(document.getElementById("num2").value);
+    let op = document.getElementById("op").value;
 
-function subtract(){
-    const n1= parseFloat(document.getElementById('num1').value);
-    const n2= parseFloat(document.getElementById('num2').value);
-    document.getElementById('result').innerHTML = "Result :" + (n1 - n2);
-}
+    let res = 0;
 
-function multiply(){
-    const n1= parseFloat(document.getElementById('num1').value);
-    const n2= parseFloat(document.getElementById('num2').value);
-    document.getElementById('result').innerHTML = "Result :" + (n1 * n2);
-}
+    if (op === "+") res = a + b;
+    else if (op === "-") res = a - b;
+    else if (op === "*") res = a * b;
+    else if (op === "/") res = a / b;
 
-function divide(){
-    const n1= parseFloat(document.getElementById('num1').value);
-    const n2= parseFloat(document.getElementById('num2').value);
-    document.getElementById('result').innerHTML = "Result :" + (n1 / n2);
-}
-
-function Clear(){
-    console.log('clear function called');
-    document.getElementById('num1').value = '';
-    document.getElementById('num2').value = '';
-    document.getElementById('result').innerHTML = '';
-    console.log('clear function completed');
+    document.getElementById("result").innerHTML = "Result: " + res;
 }

@@ -1,11 +1,11 @@
 # EX-4: Sign In & Sign Up Page
 
 ## Overview
-This is a modern **Sign In & Sign Up** web application featuring a clean, professional design with dual authentication forms. The page includes a navigation bar, elegant card layout with a background image, and responsive HTML and CSS styling.
+This is a modern **Sign In & Sign Up** web application featuring a clean, professional design with dual authentication forms. The page includes a navigation bar, elegant card layout with a background image, responsive HTML and CSS styling, and interactive JavaScript functionality for form validation and user feedback.
 
 ## Features
-- 🔐 **Sign In Form** - Username/Email/Phone and password fields
-- ✍️ **Sign Up Form** - Create new account with name, email, and password
+- 🔐 **Sign In Form** - Username/Email/Phone and password fields with validation
+- ✍️ **Sign Up Form** - Create new account with name, email, and password validation
 - 🎨 **Modern Design** - Clean, professional card-based UI
 - 📱 **Responsive Layout** - Works on desktop, tablet, and mobile
 - 🧭 **Navigation Bar** - Quick navigation links (Home, Products, Services, Contact Us)
@@ -13,12 +13,18 @@ This is a modern **Sign In & Sign Up** web application featuring a clean, profes
 - 🖼️ **Beautiful Background** - Custom background image support
 - ✨ **Underline Input Fields** - Clean, minimal input styling
 - 🌗 **Dark Overlay** - Ensures text visibility on background
+- ✅ **Form Validation** - Client-side validation with error messages
+- 👁️ **Show/Hide Password** - Toggle visibility for password fields
+- 🎯 **Keyboard Navigation** - Enter key support for form submission
+- 📢 **User Feedback** - Success and error messages
+- ♿ **Accessibility** - Proper form labels and keyboard support
 
 ## File Structure
 ```
 Ex-4/
 ├── index.html      # HTML structure with background image and forms
 ├── style.css       # Professional styling with background image support
+├── script.js       # JavaScript for form validation and interactivity
 ├── image.png       # Background image file (local)
 └── README.md       # Documentation
 ```
@@ -47,6 +53,27 @@ Ex-4/
 | Name | Text | Enter Name |
 | Email | Text | Enter Email |
 | Password | Password | Enter Password |
+
+## JavaScript Functionality
+
+### Form Validation
+- **Client-side validation** for all form fields
+- **Email format validation** using regex
+- **Password length validation** (minimum 6 characters)
+- **Required field validation** for all inputs
+
+### User Interactions
+- **Form submission handling** with preventDefault
+- **Show/Hide password toggle** for better UX
+- **Keyboard navigation** (Enter key submits forms)
+- **Success/Error messages** with auto-dismiss
+- **Console logging** for development (simulates API calls)
+
+### Accessibility Features
+- **Proper form labels** linked to inputs
+- **Keyboard support** for all interactive elements
+- **Screen reader friendly** markup
+- **Focus management** with visual indicators
 
 ## Technical Details
 
@@ -152,9 +179,10 @@ Ex-4/
 ```
 
 ## Requirements
-- Modern web browser (Chrome, Firefox, Safari, Edge)
+- Modern web browser with JavaScript enabled (Chrome, Firefox, Safari, Edge)
 - Background image file (`image.png`) in the project folder
-- No JavaScript required
+- No external libraries or frameworks required
+- ES6+ JavaScript support
 - No external libraries
 
 ## Browser Compatibility

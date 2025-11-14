@@ -1,87 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Application Form</title>
-    <link rel="stylesheet" href="./Styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Application Form</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .form-container {
+      max-width: 600px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+      color: #fefefe;
+    }
+    .form-container h2 {
+      text-align: center;
+      color: #ff0000;
+      margin-bottom: 2rem;
+      text-shadow: 0 0 10px #ff0000;
+    }
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: #fff;
+    }
+    input {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid #333;
+      border-radius: 5px;
+      background: #111;
+      color: #fff;
+      font-size: 1rem;
+    }
+    input:focus {
+      border-color: #ff0000;
+      box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+    }
+    button {
+      width: 100%;
+      padding: 0.75rem;
+      background: linear-gradient(45deg, #ff0000, #ff4444);
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    button:hover {
+      background: linear-gradient(45deg, #ff4444, #ff0000);
+      box-shadow: 0 4px 8px rgba(255, 0, 0, 0.3);
+    }
+  </style>
 </head>
-
 <body>
-    <div>
-        <h1>Company Name</h1>
-        <hr>
-        <div class="h-div">
-            <a href="./index.html">Media Elements</a>
-            <a href="./Application.html">Application Form</a>
-        </div>
-        <hr>
-    </div>
-    <form>
-        <h2>Application Form</h2>
-        <div>
-            <label for="">Name : </label>
-            <input type="text">
-        </div>
-        <div>
-            <label for="">Application Number : </label>
-            <input type="text">
-        </div>
-        <div>
-            <label for="">Password : </label>
-            <input type="password">
-        </div>
-        <div>
-            <label for="">Date of Birth :</label>
-            <input type="date">
-        </div>
-        <div>
-            <label for="">Age :</label>
-            <input type="number" name="" id="">
-        </div>
-        <div>
-            <label for="">Mobile Number :</label>
-            <input type="number" name="" id="" placeholder="Enter Monile Number">
-        </div>
-        <div>
-            <label for="">Email :</label>
-            <input type="email" placeholder="Enter Your Email Id" id="">
-        </div>
-        <div>
-            <label for="">Gender : </label>
-            <input type="radio" name="" id="">Male
-            <input type="radio" name="" id="">Female
-        </div>
-        <div>
-            <label for="">Address : </label>
-            <input type="text" name="" id="" height="560">
-        </div>
-        <div>
-            <label for="">Languages Known :</label>
-            <input type="checkbox" name="" id="">English
-            <input type="checkbox" name="" id="">Tamil
-            <input type="checkbox" name="" id="">Malayalam
-            <input type="checkbox" name="" id="">Telugu
-            <input type="checkbox" name="" id="">Hindi
-        </div>
-        <div>
-            <label for="">Select your Course : </label>
-            <select name="" id="">
-                <option value="">B.Tech</option>
-                <option value="">M.Tech</option>
-                <option value="">B.Sc</option>
-                <option value="">M.Sc</option>
-
-            </select>
-        </div>
-        <div>
-            <label for="">Upload Your Photo :</label>
-            <input type="file" name="" id="">
-        </div>
-        <button type="submit">Submit</button>
-
+  <div class="form-container">
+    <h2>Applicant Details Form</h2>
+    <form action="submit.php" method="post" autocomplete="on">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" autofocus placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+        <label for="app_num">Application Number:</label>
+        <input type="text" id="app_num" name="app_num" placeholder="KU20201CS1010" pattern="KU\d{4}\w{2}\d{4}" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" minlength="8" required>
+      </div>
+      <div class="form-group">
+        <label for="mobile">Mobile Number:</label>
+        <input type="tel" id="mobile" name="mobile" placeholder="Enter mobile number" pattern="\d{10}" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="sample@gmail.com" required>
+      </div>
+      <button type="submit">Submit</button>
     </form>
+  </div>
 </body>
-
-</html>
+</html></content>
+<parameter name="filePath">d:\Full_Stack_Lab\Ex-2\application.html

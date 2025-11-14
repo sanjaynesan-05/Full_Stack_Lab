@@ -25,40 +25,46 @@
             <!-- Sign In Card -->
             <div class="card signin-card">
                 <h2>Sign In</h2>
-                <div class="form-group">
-                    <label for="signin-username">Username</label>
-                    <input type="text" id="signin-username" placeholder="Enter Username / Email / Phone Number">
-                </div>
+                <form id="signin-form">
+                    <div class="form-group">
+                        <label for="signin-username">Username</label>
+                        <input type="text" id="signin-username" placeholder="Enter Username / Email / Phone Number" required>
+                    </div>
 
-                <div class="form-group">
-                    <label for="signin-password">Password</label>
-                    <input type="password" id="signin-password" placeholder="Enter Password">
-                </div>
+                    <div class="form-group">
+                        <label for="signin-password">Password</label>
+                        <input type="password" id="signin-password" placeholder="Enter Password" required>
+                    </div>
 
-                <button class="btn btn-signin">Sign In</button>
+                    <button type="submit" class="btn btn-signin">Sign In</button>
+                </form>
             </div>
 
             <!-- Sign Up Card -->
             <div class="card signup-card">
                 <h2>Sign Up</h2>
-                <div class="form-group">
-                    <label for="signup-name">Name</label>
-                    <input type="text" id="signup-name" placeholder="Enter Name">
-                </div>
+                <form id="signup-form">
+                    <div class="form-group">
+                        <label for="signup-name">Name</label>
+                        <input type="text" id="signup-name" placeholder="Enter Name" required>
+                    </div>
 
-                <div class="form-group">
-                    <label for="signup-email">Email</label>
-                    <input type="text" id="signup-email" placeholder="Enter Email">
-                </div>
+                    <div class="form-group">
+                        <label for="signup-email">Email</label>
+                        <input type="email" id="signup-email" placeholder="Enter Email" required>
+                    </div>
 
-                <div class="form-group">
-                    <label for="signup-password">Password</label>
-                    <input type="password" id="signup-password" placeholder="Enter Password">
-                </div>
+                    <div class="form-group">
+                        <label for="signup-password">Password</label>
+                        <input type="password" id="signup-password" placeholder="Enter Password" required>
+                    </div>
 
-                <button class="btn btn-signup">Sign Up</button>
+                    <button type="submit" class="btn btn-signup">Sign Up</button>
+                </form>
             </div>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
